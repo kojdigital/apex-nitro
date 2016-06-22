@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>APEX Front-End Boost by OraOpenSource</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">APEX Front-End Boost</h1>
+      <h2 class="project-tagline">Enhance your productivity with a complete Front-End Stack for Oracle APEX development.</h2>
+      <a href="https://github.com/OraOpenSource/apex-frontend-boost" class="btn">View on GitHub</a>
+      <a href="https://github.com/OraOpenSource/apex-frontend-boost/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/OraOpenSource/apex-frontend-boost/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><a href="https://travis-ci.org/OraOpenSource/apex-frontend-boost"><img src="https://travis-ci.org/OraOpenSource/apex-frontend-boost.svg?branch=master" alt="Build Status"></a>
+<a href="https://david-dm.org/OraOpenSource/apex-frontend-boost"><img src="https://david-dm.org/OraOpenSource/apex-frontend-boost.svg" alt="Dependency Status"></a></p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
+
+<ul>
+<li>
+<a href="#what-apex-front-end-boost-is">What APEX Front-End Boost is</a>
+
+<ul>
+<li><a href="#what-apex-front-end-boost-does">What APEX Front-End Boost does</a></li>
+<li><a href="#how-apex-front-end-boost-helps-you">How APEX Front-End Boost helps you</a></li>
+<li><a href="#other-benefits">Other benefits</a></li>
+</ul>
+</li>
+<li><a href="#project-sponsors">Project Sponsors</a></li>
+<li><a href="#system-requirements">System Requirements</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#upgrade">Upgrade</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#apex-setup">APEX Setup</a></li>
+<li><a href="#run">Run</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#changelog">Changelog</a></li>
+<li><a href="#project-team">Project Team</a></li>
+</ul>
+
+<h2>
+<a id="what-apex-front-end-boost-is" class="anchor" href="#what-apex-front-end-boost-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What APEX Front-End Boost is</h2>
+
+<p>APEX Front-End Boost is a personal local web server that hosts and distributes your files to your APEX application.</p>
+
+<p>APEX Front-End Boost makes coding faster, easier, and prettier. This productivity tool helps you work with static files (<code>js</code>, <code>css</code>, <code>images</code>, etc.) more efficiently within an APEX application.</p>
+
+<p><img src="/media/demo-main.gif" alt="demo"></p>
+
+<h4>
+<a id="what-apex-front-end-boost-does" class="anchor" href="#what-apex-front-end-boost-does" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What APEX Front-End Boost does</h4>
+
+<ul>
+<li>Minifies <code>js</code> and <code>css</code>.</li>
+<li>Generates  <code>js</code> and <code>css</code> sourcemaps.</li>
+<li>Adds <code>css</code> vendor prefixes.</li>
+<li>Concatenates <code>js</code> and <code>css</code>. <em>(optional)</em>
+</li>
+<li>Parses <code>scss</code> and <code>less</code> to <code>css</code>. <em>(optional)</em>
+</li>
+<li>Generates APEX Theme Roller configuration. <em>(optional)</em>
+</li>
+<li>Transforms <code>css</code> to RTL format. <em>(optional)</em>
+</li>
+<li>Adds a standardized header comment block to <code>js</code> and <code>css</code> files. <em>(optional)</em>
+</li>
+<li>Minifies images seamlessly <em>(optional)</em>
+</li>
+</ul>
+
+<h4>
+<a id="how-apex-front-end-boost-helps-you" class="anchor" href="#how-apex-front-end-boost-helps-you" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How APEX Front-End Boost helps you</h4>
+
+<ul>
+<li>Cut down on front-end development time.</li>
+<li>Enhance your application performance due to smaller file sizes.</li>
+<li>Keep coding in your favorite code editor, without having to constantly upload anything to APEX or a web server.</li>
+<li>Stop manual refresh of your browser to get <code>js</code> and <code>css</code> modification.</li>
+<li>Stop affecting other developers. <strong>Any development done within APEX Front-End Boost affects you and only you</strong>.</li>
+<li>Be notified of <code>js</code> and <code>css</code> errors as you save.</li>
+</ul>
+
+<h4>
+<a id="other-benefits" class="anchor" href="#other-benefits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other benefits</h4>
+
+<p>It makes responsive development easier by synchronizing multiple devices together. Your desktop, tablet and mobile device will imitate each others actions (scrolling, clicking, typing) as long as you've got APEX Front-End Boost running.</p>
+
+<p>It eliminates the need for refreshing the browser. As soon as you save your code in the text editor, you get automatic code injection / reloading in the browser.</p>
+
+<h2>
+<a id="project-sponsors" class="anchor" href="#project-sponsors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Sponsors</h2>
+
+<p>Thanks to <a href="http://insum.ca/">Insum Solutions</a> for sponsoring this project.</p>
+
+<h2>
+<a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>System Requirements</h2>
+
+<ul>
+<li>
+<a href="https://nodejs.org">Node.js</a> 4.4 (or more)</li>
+<li>
+<a href="https://apex.oracle.com">Oracle APEX</a> 5 (or more) for <a href="/docs/apex-setup.md">Application Setup Option 1</a>
+</li>
+<li>
+<a href="https://apex.oracle.com">Oracle APEX</a> 4-5 (or more) for <a href="/docs/apex-setup.md">Application Setup Option 2</a>
+</li>
+<li><a href="https://git-scm.com/downloads">Git</a></li>
+</ul>
+
+<p><em>Having <code>Cross Origin Sharing Requests</code> issues? <a href="/docs/cors.md">See CORS documentation</a>.</em></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<ul>
+<li>Open the command line</li>
+<li>Go to your desired APEX Front-End Boost directory</li>
+<li>Execute</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/OraOpenSource/apex-frontend-boost.git
+<span class="pl-c1">cd</span> apex-frontend-boost      
+npm install</pre></div>
+
+<p><em>Having problems installing on Windows? <a href="/docs/windows.md">See documentation</a>.</em>  </p>
+
+<p><em>Having problems installing on Linux? <a href="/docs/linux.md">See documentation</a>.</em></p>
+
+<h2>
+<a id="upgrade" class="anchor" href="#upgrade" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upgrade</h2>
+
+<ul>
+<li>Open the command line</li>
+<li>Go to your APEX Front-End Boost directory</li>
+<li>Execute</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>git fetch origin
+git reset --hard origin/master
+npm install</pre></div>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p>You need to configure APEX Front-End Boost for your project(s). <a href="/docs/config.json.md">See documentation</a>.</p>
+
+<h2>
+<a id="apex-setup" class="anchor" href="#apex-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>APEX Setup</h2>
+
+<p>There are two options to setup your application:</p>
+
+<ul>
+<li>
+<strong>Option 1) Standard</strong>
+
+<ul>
+<li>1 Build Option</li>
+<li>1 Application Process</li>
+</ul>
+</li>
+<li>
+<strong>Option 2) Custom Application Item</strong>
+
+<ul>
+<li>1 Build Option</li>
+<li>1 Application Item</li>
+<li>2 Application Processes</li>
+</ul>
+</li>
+</ul>
+
+<p>Review the <a href="/docs/apex-setup.md">APEX Setup</a> docs to choose the most appropriate option for your project.</p>
+
+<h2>
+<a id="run" class="anchor" href="#run" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run</h2>
+
+<p><strong>On the command line:</strong>  </p>
+
+<div class="highlight highlight-source-shell"><pre>npm start -- --project=yourProjectName</pre></div>
+
+<p><strong>or use Windows shortcut:</strong></p>
+
+<ul>
+<li>Launch <code>apex-frontend-boost.bat</code>
+</li>
+<li>Enter project name</li>
+</ul>
+
+<p><strong>or use Linux/OS X shortcut:</strong></p>
+
+<ul>
+<li>Execute <code>./apex-frontend-boost.sh</code>
+</li>
+<li>Enter project name</li>
+</ul>
+
+<p><em>Note: If you encounter errors while executing the steps above, you may need to use an elevated command line (run as administrator).</em></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>From the <code>src</code> folder you can create, edit or delete any files in:</p>
+
+<pre><code>|-/src/
+    |-scss
+    |-less
+    |-css
+    |-img
+    |-js
+    |-lib
+</code></pre>
+
+<p>APEX Front-End Boost will automatically compile your files to this folder structure:</p>
+
+<pre><code>|-/dist/
+    |-css
+    |-img
+    |-js
+    |-lib
+</code></pre>
+
+<p><em>Having problems regarding Self-Signed SSL Browser Warning? <a href="/docs/ssl-warning.md">See documentation</a>.</em></p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li><a href="http://www.browsersync.io/">Browsersync</a></li>
+<li><a href="http://sass-lang.com/">Sass</a></li>
+<li><a href="http://lesscss.org/">Less</a></li>
+<li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
+<li><a href="http://jshint.com/">JSHint</a></li>
+<li><a href="https://github.com/terinjokes/gulp-uglify">UglifyJS</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-sourcemaps">Sourcemaps</a></li>
+<li><a href="https://github.com/tracker1/gulp-header">Header</a></li>
+<li><a href="https://github.com/MohammadYounes/rtlcss">RTLCSS</a></li>
+<li><a href="https://github.com/sindresorhus/gulp-imagemin">imagemin</a></li>
+<li>More...</li>
+</ul>
+
+<p><a href="/docs/examples.md">See features examples</a>.</p>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h2>
+
+<p><a href="changelog.md">See changelog</a>.</p>
+
+<h2>
+<a id="project-team" class="anchor" href="#project-team" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Team</h2>
+
+<ul>
+<li><a href="https://github.com/vincentmorneau">Vincent Morneau</a></li>
+<li><a href="https://github.com/martindsouza">Martin Giffy D'Souza</a></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/OraOpenSource/apex-frontend-boost">APEX Front-End Boost</a> is maintained by <a href="https://github.com/OraOpenSource">OraOpenSource</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
