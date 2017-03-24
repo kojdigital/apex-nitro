@@ -1,0 +1,8 @@
+title: APEX Front-End Boost
+description: Boost your JavaScript and CSS productivity in Oracle APEX
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
