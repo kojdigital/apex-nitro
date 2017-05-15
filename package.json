@@ -32,7 +32,7 @@
   "dependencies": {
     "apex-publish-static-files": "1.0.x",
     "babili-webpack-plugin": "0.0.11",
-    "browser-sync": "^2.17.5",
+    "browser-sync": "^2.18.9",
     "chalk": "1.1.x",
     "del": "2.2.x",
     "gulp": "3.9.x",
